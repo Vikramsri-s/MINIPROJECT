@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./asserts/logohearder.jpg">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Car Rental Service</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button id="openModal">Login / Register</button></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+ 
+  </div>
+  
+    <section class="search-section">
+        <div class="container">
+            <h2>Search across 4.4 Crore+ Cars</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter city or location">
+                <input type="text" placeholder="Search for Cars">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-content">
+                <div class="carousel-item active">
+                    <h3>Looking for Affordable Car Rentals?</h3>
+                    <p>Get the best car rental deals near you.</p>
+                    <button class="carousel-btn">Get Best Quotes</button>
+                </div>
+                <div class="carousel-item">
+                    <h3>Premium Cars Available</h3>
+                    <p>Book luxury cars for special occasions.</p>
+                    <button class="carousel-btn">Explore Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="categories">
+        <div class="container">
+            <h2>Explore Our Services</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <h4>Luxury Cars</h4>
+                </div>
+                <div class="category-item">
+                    <h4>Economy Cars</h4>
+                </div>
+                <div class="category-item">
+                    <h4>SUVs</h4>
+                    
+                </div>
+                <div class="category-item">
+                    <h4>Chauffeur Services</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3690958096217!2d80.03671387481754!3d12.819409318197188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f76c4db87a47%3A0x341fa471f8027d68!2sSRM%20University%2C%20Kattankulathur%2C%20Tamil%20Nadu%20603203!5e0!3m2!1sen!2sin!4v1726994779290!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe style="border:none;" id="popupIframe" src="" width="100%" height="400px"></iframe>
+        </div>
+      </div>
+    
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+    
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModal");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks the button, open the modal and load the HTML file
+        btn.onclick = function() {
+          document.getElementById("popupIframe").src = "popup.html";  // Put your HTML file here
+          modal.style.display = "block";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
